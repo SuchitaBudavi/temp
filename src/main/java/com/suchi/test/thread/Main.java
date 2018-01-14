@@ -133,7 +133,7 @@ public class Main {
 		}
 		System.out.println("Main method ended");		*/
 		
-		System.out.println("Addition using Callable and Future");
+		/*System.out.println("Addition using Callable and Future");
 		ExecutorService e = Executors.newFixedThreadPool(10); 		
 		ArrayList<Future<Integer>> intermediateResult = new ArrayList<Future<Integer>>();
 		Integer finalResult = 0;
@@ -151,7 +151,7 @@ public class Main {
 				e1.printStackTrace();
 			}
 		}
-		System.out.println("Final result is: "+finalResult);		
+		System.out.println("Final result is: "+finalResult);	*/	
 	}
 
 }
