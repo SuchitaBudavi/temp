@@ -1,9 +1,4 @@
 package com.suchi.test;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-
-import com.suchi.test.LinkedList_CH2.AdditionListResult;
 
 public class Main {
 
