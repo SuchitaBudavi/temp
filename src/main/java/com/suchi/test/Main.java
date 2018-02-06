@@ -150,7 +150,7 @@ public class Main {
 		
 		//ch5Helper.fractionToBinary(0.72);
 		
-		//circular array
+		/*//circular array
 		int counter = 0;
 		int[] circularArray = new int[5];
 		for (int i = 0; i < circularArray.length; i++) {
@@ -160,7 +160,10 @@ public class Main {
 		if(counter == circularArray.length){
 			counter = 0;
 			circularArray[counter] = 6;
-		}
+		}*/
+		
+		System.out.println("<!-------------------Print all possible substrings------------------------------->");
+		ch1Helper.printAllSubstrings("ababab");
 		
 	}
 	

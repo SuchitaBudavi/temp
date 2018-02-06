@@ -1,5 +1,6 @@
 package com.suchi.test;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.regex.Matcher;
@@ -165,6 +166,24 @@ public class ArraysString_CH1 {
 			for(int j=0;j<=i;j++){
 				System.out.print("* ");
 			}
+		}
+	}
+	
+	//print all possible substring from a given string
+	public void printAllSubstrings(String input){
+		HashSet<String> memory = new HashSet<String>();
+					
+		for(int i=0;i<input.length();i++){
+			for(int j=0;j<input.length()-1;j=j+1){
+				if((j+i) <input.length())
+					memory.add(input.substring(j,j+i+1));
+			}
+		}
+		
+		System.out.println("");
+		for (Iterator iterator = memory.iterator(); iterator.hasNext();) {
+			String string = (String) iterator.next();
+			System.out.print(string+", ");
 		}
 	}
 }

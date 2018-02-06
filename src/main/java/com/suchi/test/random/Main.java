@@ -32,12 +32,12 @@ public class Main {
 		Count.ONE.print();
 		Count val = Count.ONE;*/
 		
-		Employee e = new Employee("suchi","budavi",27,"A1", 1000);
+		/*Employee e = new Employee("suchi","budavi",27,"A1", 1000);
 		System.out.println(e);
 		e.printSalary();
 		
 		Person p = new Employee("sagar", "budavi", 31, "A2", 5000);
-		System.out.println(p);
+		System.out.println(p);*/
 		//p cant access methods of e
 		
 		/*Employee e1 = (Employee) new Person("pooja","budavi",4000);
@@ -62,7 +62,7 @@ public class Main {
 		};
 		techm.printSalary();*/
 		
-		System.out.println("<---------------- Lamda expression -------------------->");
+		/*System.out.println("<---------------- Lamda expression -------------------->");
 		//example 1;
 		StateChangeOwner owner = new StateChangeOwner();
 		owner.addStateListner(new StateChangeListner(){
@@ -84,7 +84,12 @@ public class Main {
 			System.out.print(val);
 		}
 		numbers.forEach(value -> System.out.print(value));	
-		int sum=0;		
+		int sum=0;		*/
+		
+		System.out.println("<---------------- Print pascal triangle -------------------->");
+		PrintDiffTriangles printTrianglesHelper = new PrintDiffTriangles();
+		printTrianglesHelper.pascalTriangle(7);
+		
 	}
 
 }
