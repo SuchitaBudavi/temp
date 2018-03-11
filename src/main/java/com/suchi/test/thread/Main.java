@@ -133,7 +133,7 @@ public class Main {
 		}
 		System.out.println("Main method ended");		*/
 		
-		System.out.println("Addition using Callable and Future");
+		/*System.out.println("Addition using Callable and Future");
 		ExecutorService e = Executors.newFixedThreadPool(10); 		
 		ArrayList<Future<Integer>> intermediateResult = new ArrayList<Future<Integer>>();
 		Integer finalResult = 0;
@@ -151,7 +151,24 @@ public class Main {
 				e1.printStackTrace();
 			}
 		}
-		System.out.println("Final result is: "+finalResult);	
+		System.out.println("Final result is: "+finalResult);	*/
+		
+		Thread t = new Thread(new TimerTest());
+		System.out.println(t.getState());
+		t.start();
+		
+		try {
+			System.out.println(t.getState());
+			Thread.sleep(4000);
+			System.out.println(t.getState());
+			Thread.sleep(2000);
+			t.start();
+		
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		System.out.println("added new line");
 	}
 
